@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Прогноз погоди</title>
+  <link rel="stylesheet" href="style.css" />
+  <script
+    src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body id="body">
+  <div class="container">
+    <h1><i class="fas fa-cloud-sun"></i> Прогноз погоди</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Введіть місто" />
+      <button onclick="getWeather(1)">1 день</button>
+      <button onclick="getWeather(3)">3 дні</button>
+      <button onclick="getWeather(7)">7 днів</button>
+      <button id="themeToggleBtn">Нічна тема</button>
+    </div>
+    <div id="weatherResult"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
